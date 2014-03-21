@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D891A89C18DC0973008E1582 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D891A8AC18DC0973008E1582 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				D891A89B18DC0973008E1582 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D891A86D18DC0973008E1582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D891A86C18DC0973008E1582 /* Foundation.framework */; };
+		D891A86F18DC0973008E1582 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D891A86E18DC0973008E1582 /* CoreGraphics.framework */; };
+		D891A87118DC0973008E1582 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D891A87018DC0973008E1582 /* UIKit.framework */; };
+		D891A87718DC0973008E1582 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D891A87518DC0973008E1582 /* InfoPlist.strings */; };
+		D891A87918DC0973008E1582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A87818DC0973008E1582 /* main.m */; };
+		D891A87D18DC0973008E1582 /* JOEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A87C18DC0973008E1582 /* JOEAppDelegate.m */; };
+		D891A88018DC0973008E1582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D891A87E18DC0973008E1582 /* Main.storyboard */; };
+		D891A88318DC0973008E1582 /* JOEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A88218DC0973008E1582 /* JOEViewController.m */; };
+		D891A88518DC0973008E1582 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D891A88418DC0973008E1582 /* .gitignore */; };
+		D891A88718DC0973008E1582 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D891A88618DC0973008E1582 /* Images.xcassets */; };
+		D891A88E18DC0973008E1582 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D891A88D18DC0973008E1582 /* XCTest.framework */; };
+		D891A88F18DC0973008E1582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D891A86C18DC0973008E1582 /* Foundation.framework */; };
+		D891A89018DC0973008E1582 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D891A87018DC0973008E1582 /* UIKit.framework */; };
+		D891A89818DC0973008E1582 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D891A89618DC0973008E1582 /* InfoPlist.strings */; };
+		D891A89A18DC0973008E1582 /* JOEMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A89918DC0973008E1582 /* JOEMathTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D891A89118DC0973008E1582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D891A86118DC0973008E1582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D891A86818DC0973008E1582;
+			remoteInfo = JOEMath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D891A86918DC0973008E1582 /* JOEMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JOEMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D891A86C18DC0973008E1582 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D891A86E18DC0973008E1582 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D891A87018DC0973008E1582 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D891A87418DC0973008E1582 /* JOEMath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JOEMath-Info.plist"; sourceTree = "<group>"; };
+		D891A87618DC0973008E1582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D891A87818DC0973008E1582 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D891A87A18DC0973008E1582 /* JOEMath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JOEMath-Prefix.pch"; sourceTree = "<group>"; };
+		D891A87B18DC0973008E1582 /* JOEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOEAppDelegate.h; sourceTree = "<group>"; };
+		D891A87C18DC0973008E1582 /* JOEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOEAppDelegate.m; sourceTree = "<group>"; };
+		D891A87F18DC0973008E1582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D891A88118DC0973008E1582 /* JOEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOEViewController.h; sourceTree = "<group>"; };
+		D891A88218DC0973008E1582 /* JOEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOEViewController.m; sourceTree = "<group>"; };
+		D891A88418DC0973008E1582 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D891A88618DC0973008E1582 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D891A88C18DC0973008E1582 /* JOEMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JOEMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D891A88D18DC0973008E1582 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D891A89518DC0973008E1582 /* JOEMathTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JOEMathTests-Info.plist"; sourceTree = "<group>"; };
+		D891A89718DC0973008E1582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D891A89918DC0973008E1582 /* JOEMathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOEMathTests.m; sourceTree = "<group>"; };
+		D891A89E18DC0973008E1582 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		D891A8A018DC0973008E1582 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Programming Guide-template.markdown"; sourceTree = "<group>"; };
+		D891A8A118DC0973008E1582 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Setup Guide-template.markdown"; sourceTree = "<group>"; };
+		D891A8A218DC0973008E1582 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D891A8A318DC0973008E1582 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D891A86618DC0973008E1582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D891A86F18DC0973008E1582 /* CoreGraphics.framework in Frameworks */,
+				D891A87118DC0973008E1582 /* UIKit.framework in Frameworks */,
+				D891A86D18DC0973008E1582 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D891A88918DC0973008E1582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D891A88E18DC0973008E1582 /* XCTest.framework in Frameworks */,
+				D891A89018DC0973008E1582 /* UIKit.framework in Frameworks */,
+				D891A88F18DC0973008E1582 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D891A86018DC0973008E1582 = {
+			isa = PBXGroup;
+			children = (
+				D891A87218DC0973008E1582 /* JOEMath */,
+				D891A89318DC0973008E1582 /* JOEMathTests */,
+				D891A89D18DC0973008E1582 /* Documentation */,
+				D891A86B18DC0973008E1582 /* Frameworks */,
+				D891A86A18DC0973008E1582 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D891A86A18DC0973008E1582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D891A86918DC0973008E1582 /* JOEMath.app */,
+				D891A88C18DC0973008E1582 /* JOEMathTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D891A86B18DC0973008E1582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D891A86C18DC0973008E1582 /* Foundation.framework */,
+				D891A86E18DC0973008E1582 /* CoreGraphics.framework */,
+				D891A87018DC0973008E1582 /* UIKit.framework */,
+				D891A88D18DC0973008E1582 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D891A87218DC0973008E1582 /* JOEMath */ = {
+			isa = PBXGroup;
+			children = (
+				D891A87B18DC0973008E1582 /* JOEAppDelegate.h */,
+				D891A87C18DC0973008E1582 /* JOEAppDelegate.m */,
+				D891A87E18DC0973008E1582 /* Main.storyboard */,
+				D891A88118DC0973008E1582 /* JOEViewController.h */,
+				D891A88218DC0973008E1582 /* JOEViewController.m */,
+				D891A88418DC0973008E1582 /* .gitignore */,
+				D891A88618DC0973008E1582 /* Images.xcassets */,
+				D891A87318DC0973008E1582 /* Supporting Files */,
+			);
+			path = JOEMath;
+			sourceTree = "<group>";
+		};
+		D891A87318DC0973008E1582 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D891A87418DC0973008E1582 /* JOEMath-Info.plist */,
+				D891A87518DC0973008E1582 /* InfoPlist.strings */,
+				D891A87818DC0973008E1582 /* main.m */,
+				D891A87A18DC0973008E1582 /* JOEMath-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D891A89318DC0973008E1582 /* JOEMathTests */ = {
+			isa = PBXGroup;
+			children = (
+				D891A89918DC0973008E1582 /* JOEMathTests.m */,
+				D891A89418DC0973008E1582 /* Supporting Files */,
+			);
+			path = JOEMathTests;
+			sourceTree = "<group>";
+		};
+		D891A89418DC0973008E1582 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D891A89518DC0973008E1582 /* JOEMathTests-Info.plist */,
+				D891A89618DC0973008E1582 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D891A89D18DC0973008E1582 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D891A89E18DC0973008E1582 /* AppledocSettings.plist */,
+				D891A8A218DC0973008E1582 /* LICENSE */,
+				D891A8A318DC0973008E1582 /* Readme.markdown */,
+				D891A89F18DC0973008E1582 /* Programming Guides */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		D891A89F18DC0973008E1582 /* Programming Guides */ = {
+			isa = PBXGroup;
+			children = (
+				D891A8A018DC0973008E1582 /* Programming Guide-template.markdown */,
+				D891A8A118DC0973008E1582 /* Setup Guide-template.markdown */,
+			);
+			name = "Programming Guides";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D891A86818DC0973008E1582 /* JOEMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D891A8A618DC0973008E1582 /* Build configuration list for PBXNativeTarget "JOEMath" */;
+			buildPhases = (
+				D891A86518DC0973008E1582 /* Sources */,
+				D891A86618DC0973008E1582 /* Frameworks */,
+				D891A86718DC0973008E1582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JOEMath;
+			productName = JOEMath;
+			productReference = D891A86918DC0973008E1582 /* JOEMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D891A88B18DC0973008E1582 /* JOEMathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D891A8A918DC0973008E1582 /* Build configuration list for PBXNativeTarget "JOEMathTests" */;
+			buildPhases = (
+				D891A88818DC0973008E1582 /* Sources */,
+				D891A88918DC0973008E1582 /* Frameworks */,
+				D891A88A18DC0973008E1582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D891A89218DC0973008E1582 /* PBXTargetDependency */,
+			);
+			name = JOEMathTests;
+			productName = JOEMathTests;
+			productReference = D891A88C18DC0973008E1582 /* JOEMathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D891A86118DC0973008E1582 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JOE;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Joseph Collins";
+				TargetAttributes = {
+					D891A88B18DC0973008E1582 = {
+						TestTargetID = D891A86818DC0973008E1582;
+					};
+				};
+			};
+			buildConfigurationList = D891A86418DC0973008E1582 /* Build configuration list for PBXProject "JOEMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D891A86018DC0973008E1582;
+			productRefGroup = D891A86A18DC0973008E1582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D891A86818DC0973008E1582 /* JOEMath */,
+				D891A88B18DC0973008E1582 /* JOEMathTests */,
+				D891A89C18DC0973008E1582 /* Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D891A86718DC0973008E1582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D891A87718DC0973008E1582 /* InfoPlist.strings in Resources */,
+				D891A88718DC0973008E1582 /* Images.xcassets in Resources */,
+				D891A88518DC0973008E1582 /* .gitignore in Resources */,
+				D891A88018DC0973008E1582 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D891A88A18DC0973008E1582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D891A89818DC0973008E1582 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D891A89B18DC0973008E1582 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\n// USER CONFIG\nSOURCE_DIR=\"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\nDESTINATION_DIR=\"/Users/Joe/Work/iJoe.Co/Development/Library/${PROJECT_NAME}\"\n// END USER CONFIG\ncd \"${BUILD_DIR}/Documentation/\"\nmkdir -p \"$DESTINATION_DIR\"\ncp -fR \"publish/\" \"$DESTINATION_DIR\"\ncd $SOURCE_DIR\ncp -fR \"Documents/\" \"$DESTINATION_DIR\"\ncd \"$DESTINATION_DIR\"\nopen -a Terminal\nosascript -e 'tell application \"Terminal\" to do script \"cd '\"$DESTINATION_DIR\"'; nano '\"${PROJECT_NAME}\"'.xml\"'";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D891A86518DC0973008E1582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D891A87918DC0973008E1582 /* main.m in Sources */,
+				D891A87D18DC0973008E1582 /* JOEAppDelegate.m in Sources */,
+				D891A88318DC0973008E1582 /* JOEViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D891A88818DC0973008E1582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D891A89A18DC0973008E1582 /* JOEMathTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D891A89218DC0973008E1582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D891A86818DC0973008E1582 /* JOEMath */;
+			targetProxy = D891A89118DC0973008E1582 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D891A87518DC0973008E1582 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D891A87618DC0973008E1582 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D891A87E18DC0973008E1582 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D891A87F18DC0973008E1582 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D891A89618DC0973008E1582 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D891A89718DC0973008E1582 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D891A8A418DC0973008E1582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D891A8A518DC0973008E1582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D891A8A718DC0973008E1582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JOEMath/JOEMath-Prefix.pch";
+				INFOPLIST_FILE = "JOEMath/JOEMath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D891A8A818DC0973008E1582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JOEMath/JOEMath-Prefix.pch";
+				INFOPLIST_FILE = "JOEMath/JOEMath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D891A8AA18DC0973008E1582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JOEMath.app/JOEMath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JOEMath/JOEMath-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JOEMathTests/JOEMathTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D891A8AB18DC0973008E1582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JOEMath.app/JOEMath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JOEMath/JOEMath-Prefix.pch";
+				INFOPLIST_FILE = "JOEMathTests/JOEMathTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		D891A8AD18DC0973008E1582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D891A8AE18DC0973008E1582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D891A86418DC0973008E1582 /* Build configuration list for PBXProject "JOEMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D891A8A418DC0973008E1582 /* Debug */,
+				D891A8A518DC0973008E1582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D891A8A618DC0973008E1582 /* Build configuration list for PBXNativeTarget "JOEMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D891A8A718DC0973008E1582 /* Debug */,
+				D891A8A818DC0973008E1582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D891A8A918DC0973008E1582 /* Build configuration list for PBXNativeTarget "JOEMathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D891A8AA18DC0973008E1582 /* Debug */,
+				D891A8AB18DC0973008E1582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D891A8AC18DC0973008E1582 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D891A8AD18DC0973008E1582 /* Debug */,
+				D891A8AE18DC0973008E1582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D891A86118DC0973008E1582 /* Project object */;
+}
