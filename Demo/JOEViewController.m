@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) NSSet *divisors;
 @property (nonatomic, assign) int maxDividend;
+@property (nonatomic, copy) NSString *totalFound;
 
 @end
 
@@ -50,25 +51,63 @@
     return NO;
 }
 
-#warning - place operations in a background thread as to not block the UI And update the text view on find of each dividend.
+- (void)updateTry:(NSTimer *)timer
+{
+    [UIView setAnimationsEnabled:NO];
+    [self.sortButton setTitle:[NSString stringWithFormat:@"Trying: %d", self.maxDividend] forState:UIControlStateNormal];
+    [UIView setAnimationsEnabled:YES];
+    if (self.maxDividend == 0) {
+        [timer invalidate];
+        [self.sortButton setTitle:self.totalFound forState:UIControlStateNormal];
+        
+        [UIView animateWithDuration:0.5f delay:2.0f options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+            [self.sortButton.titleLabel setAlpha:0];
+        } completion:^(BOOL finished) {
+            [self.sortButton.titleLabel setAlpha:1];
+            [self.sortButton setTitle:@"Start" forState:UIControlStateNormal];
+        }];
+    }
+}
+
+
 - (IBAction)sortQuotients:(id)sender
 {
     [self.activityIndicator startAnimating];
     NSString *placeholder = @"Dividends divisible by divisors:";
     self.resultsTextView.text = placeholder;
-    for (int i = self.maxDividend; i > 0; i--) {
-        [self.sortButton setTitle:[NSString stringWithFormat:@"Trying: %d", i] forState:UIControlStateNormal];
-        BOOL success = [JOEMath integer:i isDivisibleByDivisorsInSet:self.divisors];
-        if (success) {
-            self.resultsTextView.text = [NSString stringWithFormat:@"%@\n%d", self.resultsTextView.text, i];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1.0f/30.0f target:self selector:@selector(updateTry:) userInfo:nil repeats:YES];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        NSMutableString *resultString = [NSMutableString new];
+        int totalSuccess = 0;
+
+        for (int i = self.maxDividend; i > 0; i--) {
+            _maxDividend--;
+            BOOL success;
+            @autoreleasepool {
+                success = [JOEMath integer:i isDivisibleByDivisorsInSet:self.divisors];
+            }
+            if (success) {
+                totalSuccess++;
+                self.totalFound = [NSString stringWithFormat:@"Found: %d dividends", totalSuccess];
+                [resultString appendString:[NSString stringWithFormat:@"\n %d", i]];
+            }
         }
-    }
-    
-    if ([self.resultsTextView.text isEqualToString:placeholder]) {
-        self.resultsTextView.text = @"No divisible dividends found!";
-    }
-    
-    [self.activityIndicator stopAnimating];
-    [self.sortButton setTitle:@"Start" forState:UIControlStateNormal];
+
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if ([resultString length]) {
+                self.resultsTextView.text = [NSString stringWithFormat:@"%@\n%@", self.resultsTextView.text, resultString];
+            }
+            if ([self.resultsTextView.text isEqualToString:placeholder]) {
+                self.resultsTextView.text = @"No divisible dividends found!";
+            }
+            [self.activityIndicator stopAnimating];
+        });
+        
+    });
 }
+
 @end

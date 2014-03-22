@@ -48,7 +48,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9U-g2-yxy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9U-g2-yxy">
                                 <rect key="frame" x="20" y="409" width="280" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32156862749999998" green="0.40000000000000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,7 +68,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wkz-bz-g7a">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wkz-bz-g7a">
                                 <rect key="frame" x="258" y="416" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="963" y="71"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller - JOEMath-->
         <scene sceneID="SRb-d0-bCh">
             <objects>
                 <tableViewController id="5co-7e-op2" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Find all quotients divisible by a set of numbers in a given range." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="270" id="2Y8-zX-O4k">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Find all numbers in range, divisible by a set of divisors." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="270" id="2Y8-zX-O4k">
                                                     <rect key="frame" x="15" y="0.0" width="270" height="57"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -127,7 +127,7 @@
                             <outlet property="delegate" destination="5co-7e-op2" id="n03-6t-BCb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="O4O-rH-mLr"/>
+                    <navigationItem key="navigationItem" title="JOEMath" id="O4O-rH-mLr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULK-LT-tNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

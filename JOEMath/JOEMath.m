@@ -75,14 +75,14 @@
 
 + (BOOL)integer:(NSInteger)integer isDivisibleByDivisorsInSet:(NSSet *)set
 {
+    if ([set containsObject:@"0"]) {
+        return NO;
+    }
     __block BOOL isDivisible;
     
     [set enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
-        NSDecimalNumber *divisor = [NSDecimalNumber decimalNumberWithDecimal:[(NSNumber *)obj decimalValue]];
-        NSDecimalNumber *dividend = [[NSDecimalNumber alloc] initWithInteger:integer];
-        NSDecimalNumber *result = [dividend decimalNumberByDividingBy:divisor];
-        
-        isDivisible = [self isWholeNumber:result];
+
+        isDivisible = ((integer % [(NSNumber *)obj integerValue]) == 0);
         
         if (isDivisible == NO) {
             *stop = YES;
