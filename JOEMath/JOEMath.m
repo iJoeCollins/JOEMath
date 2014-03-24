@@ -81,8 +81,8 @@
     __block BOOL isDivisible;
     
     [set enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
-
-        isDivisible = ((integer % [(NSNumber *)obj integerValue]) == 0);
+        NSInteger divisor = [(NSNumber *)obj integerValue];
+        isDivisible = ((integer % divisor) == 0);
         
         if (isDivisible == NO) {
             *stop = YES;

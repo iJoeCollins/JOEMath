@@ -33,7 +33,7 @@
 		D891A8C218DC0AB0008E1582 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D891A8B618DC0AB0008E1582 /* InfoPlist.strings */; };
 		D891A8C318DC0AB0008E1582 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D891A8B818DC0AB0008E1582 /* Images.xcassets */; };
 		D891A8C418DC0AB0008E1582 /* JOEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A8BA18DC0AB0008E1582 /* JOEAppDelegate.m */; };
-		D891A8C618DC0AB0008E1582 /* JOEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A8BE18DC0AB0008E1582 /* JOEViewController.m */; };
+		D891A8C618DC0AB0008E1582 /* JOEDivisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A8BE18DC0AB0008E1582 /* JOEDivisionViewController.m */; };
 		D891A8C718DC0AB0008E1582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A8BF18DC0AB0008E1582 /* main.m */; };
 		D891A8CE18DC1303008E1582 /* JOEMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D891A8CD18DC1303008E1582 /* JOEMathTests.m */; };
 /* End PBXBuildFile section */
@@ -70,8 +70,8 @@
 		D891A8BA18DC0AB0008E1582 /* JOEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEAppDelegate.m; sourceTree = "<group>"; };
 		D891A8BB18DC0AB0008E1582 /* JOEMath-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JOEMath-Info.plist"; sourceTree = "<group>"; };
 		D891A8BC18DC0AB0008E1582 /* JOEMath-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JOEMath-Prefix.pch"; sourceTree = "<group>"; };
-		D891A8BD18DC0AB0008E1582 /* JOEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOEViewController.h; sourceTree = "<group>"; };
-		D891A8BE18DC0AB0008E1582 /* JOEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEViewController.m; sourceTree = "<group>"; };
+		D891A8BD18DC0AB0008E1582 /* JOEDivisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOEDivisionViewController.h; sourceTree = "<group>"; };
+		D891A8BE18DC0AB0008E1582 /* JOEDivisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEDivisionViewController.m; sourceTree = "<group>"; };
 		D891A8BF18DC0AB0008E1582 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D891A8CD18DC1303008E1582 /* JOEMathTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEMathTests.m; sourceTree = "<group>"; };
 		D8CC006C18DD47F200390B77 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
@@ -215,8 +215,8 @@
 		D891A8CA18DC0B12008E1582 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D891A8BD18DC0AB0008E1582 /* JOEViewController.h */,
-				D891A8BE18DC0AB0008E1582 /* JOEViewController.m */,
+				D891A8BD18DC0AB0008E1582 /* JOEDivisionViewController.h */,
+				D891A8BE18DC0AB0008E1582 /* JOEDivisionViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = JOE;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Joseph Collins";
 				TargetAttributes = {
 					D891A88B18DC0973008E1582 = {
@@ -343,7 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\n// USER CONFIG\nSOURCE_DIR=\"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\nDESTINATION_DIR=\"/Users/Joe/Work/iJoe.Co/Development/Library/${PROJECT_NAME}\"\n// END USER CONFIG\ncd \"${BUILD_DIR}/Documentation/\"\nmkdir -p \"$DESTINATION_DIR\"\ncp -fR \"publish/\" \"$DESTINATION_DIR\"\ncd $SOURCE_DIR\ncp -fR \"Documents/\" \"$DESTINATION_DIR\"\ncd \"$DESTINATION_DIR\"\nopen -a Terminal\nosascript -e 'tell application \"Terminal\" to do script \"cd '\"$DESTINATION_DIR\"'; nano '\"${PROJECT_NAME}\"'.xml\"'";
+			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\n// USER CONFIG\nSOURCE_DIR=\"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\nDESTINATION_DIR=\"/Users/Joe/Work/iJoe.Co/Development/iJoe.Co\\ Developer/Library/${PROJECT_NAME}\"\n// END USER CONFIG\ncd \"${BUILD_DIR}/Documentation/\"\nmkdir -p \"$DESTINATION_DIR\"\ncp -fR \"publish/\" \"$DESTINATION_DIR\"\ncd $SOURCE_DIR\ncp -fR \"Documents/\" \"$DESTINATION_DIR\"\ncd \"$DESTINATION_DIR\"\nopen -a Terminal\nosascript -e 'tell application \"Terminal\" to do script \"cd '\"$DESTINATION_DIR\"'; nano '\"${PROJECT_NAME}\"'.xml\"'";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -355,7 +355,7 @@
 				D891A8B118DC0A8E008E1582 /* JOEMath.m in Sources */,
 				D891A8C418DC0AB0008E1582 /* JOEAppDelegate.m in Sources */,
 				D891A8C718DC0AB0008E1582 /* main.m in Sources */,
-				D891A8C618DC0AB0008E1582 /* JOEViewController.m in Sources */,
+				D891A8C618DC0AB0008E1582 /* JOEDivisionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +409,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -448,7 +447,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +504,6 @@
 		D891A8AA18DC0973008E1582 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JOEMath.app/JOEMath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -529,7 +526,6 @@
 		D891A8AB18DC0973008E1582 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JOEMath.app/JOEMath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JOEViewController : UIViewController <UITextFieldDelegate>
+@interface JOEDivisionViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *divisorTextField;
 @property (weak, nonatomic) IBOutlet UITextField *dividendTextField;
 @property (weak, nonatomic) IBOutlet UITextView *resultsTextView;
-@property (weak, nonatomic) IBOutlet UIButton *sortButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
