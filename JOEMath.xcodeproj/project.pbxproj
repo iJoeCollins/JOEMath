@@ -59,7 +59,7 @@
 		D891A89718DC0973008E1582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D891A8A018DC0973008E1582 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Programming Guide-template.markdown"; sourceTree = "<group>"; };
 		D891A8A118DC0973008E1582 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Setup Guide-template.markdown"; sourceTree = "<group>"; };
-		D891A8A218DC0973008E1582 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D891A8A218DC0973008E1582 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		D891A8A318DC0973008E1582 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = Readme.markdown; path = ../Readme.markdown; sourceTree = "<group>"; };
 		D891A8AF18DC0A8E008E1582 /* JOEMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOEMath.h; sourceTree = "<group>"; };
 		D891A8B018DC0A8E008E1582 /* JOEMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEMath.m; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		D891A8BE18DC0AB0008E1582 /* JOEDivisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEDivisionViewController.m; sourceTree = "<group>"; };
 		D891A8BF18DC0AB0008E1582 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D891A8CD18DC1303008E1582 /* JOEMathTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEMathTests.m; sourceTree = "<group>"; };
-		D8CC006C18DD47F200390B77 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		D8CC006C18DD47F200390B77 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = Documentation/AppledocSettings.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
