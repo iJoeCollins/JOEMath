@@ -1,11 +1,14 @@
 Abstract
 --------
 
-<# Description goes here. #>
+A growing collection of methods, ranging from simple to complex mathematical operations, that have been aggregated from development over time.
 
-Contains several <# subject #>
+Contains several operations including:
 
-- <# class name #> - <# description #>
+- isWholeNumber - checks if the integer is whole.
+- isEven - checks if the integer is even.
+- isOdd - checks if the integer is odd.
+- isDivisibleBy - checks if the integer is divisible by all divisors in a set.
 
 Setup
 -----

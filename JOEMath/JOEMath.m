@@ -37,7 +37,7 @@
 
 #pragma mark - Integer Checks
 
-+ (BOOL)isEven:(NSInteger)integer
++ (BOOL)isEven:(NSUInteger)integer
 {
     if (integer & 1) {
         return NO;
@@ -47,7 +47,7 @@
 }
 
 
-+ (BOOL)isOdd:(NSInteger)integer
++ (BOOL)isOdd:(NSUInteger)integer
 {
     if (integer & 1) {
         return YES;
@@ -55,6 +55,7 @@
     
     return NO;
 }
+
 
 + (BOOL)isWholeNumber:(NSDecimalNumber *)decimal
 {

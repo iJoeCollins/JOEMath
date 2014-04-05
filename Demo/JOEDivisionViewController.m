@@ -36,7 +36,7 @@
     if ([textField isEqual:self.divisorTextField]) {
         self.divisors = [[NSSet alloc] initWithArray:[textField.text componentsSeparatedByCharactersInSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]]];
     } else if ([textField isEqual:self.dividendTextField]) {
-        self.maxDividend = [textField.text integerValue];
+        self.maxDividend = [textField.text intValue];
     }
 }
 

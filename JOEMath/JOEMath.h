@@ -33,11 +33,54 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - JOEMath Interface
+
+/*!  A collection of methods ranging from simple to complex mathematical operations that have been aggregated from development over time.
+*/
+
 @interface JOEMath : NSObject
+
+
+///-------------------------------
+/// @name Integer Checks
+///-------------------------------
+
+/*! Method checks the wholeness of a decimal value. 
+
+    @param decimal Decimal number to be checked.
+    @return        Returns YES indicating the value is in fact a whole number.
+*/
+
 + (BOOL)isWholeNumber:(NSDecimalNumber *)decimal;
+
+/*! Determines if the integer is even.
+ 
+    @param integer NSUInteger to be checked.
+    @return        If YES, the value is even.
+*/
+
++ (BOOL)isEven:(NSUInteger)integer;
+
+/*! Determines if the integer is odd.
+ 
+    @param integer NSUInteger to be checked.
+    @return        If YES, the value is odd.
+*/
+
++ (BOOL)isOdd:(NSUInteger)integer;
+
+
+///-------------------------------
+/// @name Division Operations
+///-------------------------------
+
+/*! Determines if a given integer is divisible by all the divisors in a passed in set.
+ 
+    @param integer The integer dividend.
+    @param set     A character set composed of integer divisors.
+    @return        If YES, the integer is divisible by all the divisors in the set. If NO, it may be divisble by some, or none at all.
+*/
+
 + (BOOL)integer:(NSInteger)integer isDivisibleByDivisorsInSet:(NSSet *)set;
-+ (BOOL)isEven:(NSInteger)integer;
-+ (BOOL)isOdd:(NSInteger)integer;
+
 @end
-
-
